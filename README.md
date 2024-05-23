@@ -8,9 +8,17 @@ Debezium é uma plataforma open-source para captura de dados em mudança (Change
 
 Para realizarmos esta configuração, vamos precisar de 2 arquivos principais:
 
-1. **docker-compose.yml**: Este arquivo será fundamental para orquestrar e gerenciar todos os serviços necessários para a captura de mudanças em dados usando Debezium. Isso inclui a configuração dos contêineres para PostgreSQL, Zookeeper, Kafka, Debezium e Kafdrop.
+1. **docker-compose.yml**:
 
-2. **debezium.json**: Este arquivo se trata do conector Debezium para PostgreSQL. Ele define como o conector irá se conectar ao banco de dados PostgreSQL e quais tabelas ele irá monitorar para capturar alterações (CDC - Change Data Capture).
+![image](https://github.com/betobrandaojr/postgres-table-monitoring/assets/59041231/00145e25-e554-4feb-8ee2-8d805f7c763f)
+
+Este arquivo será fundamental para orquestrar e gerenciar todos os serviços necessários para a captura de mudanças em dados usando Debezium. Isso inclui a configuração dos contêineres para PostgreSQL, Zookeeper, Kafka, Debezium e Kafdrop.
+
+3. **debezium.json**:
+
+![image](https://github.com/betobrandaojr/postgres-table-monitoring/assets/59041231/e2b07975-ac86-48ee-a3e2-8182bdbfb0ef)
+
+   Este arquivo se trata do conector Debezium para PostgreSQL. Ele define como o conector irá se conectar ao banco de dados PostgreSQL e quais tabelas ele irá monitorar para capturar alterações (CDC - Change Data Capture).
 
 ## Instalando Docker Desktop 🐋💻
 
