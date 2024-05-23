@@ -59,6 +59,16 @@ Execute o comando abaixo para configurar as tabelas que vamos monitorar:
   ```sh
   Invoke-RestMethod -Uri "http://localhost:8083/connectors/" -Method Post -Headers @{Accept="application/json"; "Content-Type"="application/json"} -Body (Get-Content -Raw -Path "debezium.json")
   ```
+### Monitorando INSERT’s e UPDATE’s das Tabelas com Kafdrop 👀 
+---
+Com o KAFDROP é possível visualizar os tópicos e suas mensagens. Nele conseguimos acompanhar as inclusões e alterações realizadas nas tabelas configuradas. 
+
+É possível acessá-lo pelo endereço: [http://localhost:9000/](http://localhost:9000/)
+
+![image](https://github.com/betobrandaojr/postgres-table-monitoring/assets/59041231/3084bb4e-c38a-46a1-bca8-725791e2ab41)
+
+
+
 ### Conclusão 🚀✔
 ***
 Com essas etapas, você terá configurado o Debezium para monitorar alterações nas tabelas do seu banco de dados PostgreSQL e enviar essas alterações em tempo real para o Kafka,
